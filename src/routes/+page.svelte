@@ -27,7 +27,7 @@
 
   import { AlignJustifyOutline, ChevronDownOutline, DownloadOutline, UploadOutline, TrashBinOutline, CheckCircleOutline, ExclamationCircleOutline } from "flowbite-svelte-icons";
   import { onMount } from 'svelte';
-  import { ProfileManager } from '$lib/profileManager';
+  import { ProfileManager } from '$lib/models/profileManager';
   import type { RSSFeed, CategoryTags } from '$lib/types';
 
   // ===== PROFILE MANAGER & FORM VARIABLES =====

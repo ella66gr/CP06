@@ -1,6 +1,6 @@
 // src/routes/api/save-profile/+server.ts - Updated server route
 import { json, error } from '@sveltejs/kit';
-import { saveProfile, validateProfileForDatabase } from '$lib/db';
+import { saveProfile, validateProfileForDatabase } from '$lib/server/db';
 import type { DatabaseProfile } from '$lib/types';
 
 export async function POST({ request }) {
