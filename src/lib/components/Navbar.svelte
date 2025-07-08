@@ -1,4 +1,4 @@
-<!-- Reusable Navbar with placeholder dropdown menus -->
+<!-- Reusable Navbar for CP06 Profile Editor -->
 
 <script lang="ts">
 	import {
@@ -6,12 +6,9 @@
 		NavBrand,
 		NavUl,
 		NavLi,
-		Dropdown,
-		DropdownItem,
 		DarkMode
 	} from 'flowbite-svelte';
 
-	import { ChevronDownOutline } from 'flowbite-svelte-icons';
 	import { page } from '$app/stores';
 	import { derived } from 'svelte/store';
 
@@ -29,16 +26,7 @@
 	</NavBrand>
 
 	<NavUl activeUrl={activeUrlValue}>
-		<NavLi href="/">Home</NavLi>
-
-		<!-- Inputs group -->
-		<NavLi class="cursor-pointer">
-			Nav 1<ChevronDownOutline class="text-primary-800 ms-2 inline h-6 w-6 dark:text-white" />
-		</NavLi>
-		<Dropdown simple class="w-44" activeUrl={activeUrlValue}>
-			<DropdownItem href="/nav-1">Nav-1</DropdownItem>
-		</Dropdown>
-
+		<NavLi href="/">Profile Editor</NavLi>
 	</NavUl>
 
 	<!-- ✅ Valid placement of toggle outside <NavUl> to avoid nesting inside <button> -->
